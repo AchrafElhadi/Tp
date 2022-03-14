@@ -2,8 +2,10 @@ package metier;
 
 import dao.IDao;
 
+@Component
 public class MetierImpl implements IMetier {
 
+	@Autowired
 	private IDao dao;
 	@Override
 	public double calcule() {
